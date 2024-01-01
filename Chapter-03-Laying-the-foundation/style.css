@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{
+  width: 100%;
+  background-color: bisque;
+  height: 40px;
+}
+.footer{
+  width: 100%;
+  background-color: burlywood;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav-bar > ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+background-color: darkgoldenrod;
+}
+
+ul > li{
+  list-style: none;
+}
+
+.btn{
+  
+}
