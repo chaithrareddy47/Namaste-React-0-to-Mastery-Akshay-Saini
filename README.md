@@ -23,5 +23,7 @@
   - .parcel-cache folder
   - .gitignore
   - development phase vs production phase
-  - parcel advantages and its functions 
+  - parcel advantages and its functions
+
+## Day - 03 Laying the foundation
 
