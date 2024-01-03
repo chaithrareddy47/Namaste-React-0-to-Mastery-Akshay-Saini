@@ -11,3 +11,17 @@
  - Library v/s Framework
  - Advantages of React
 
+## Day - 02  Igniting Our App
+### Topics Covered
+  - What is NPM
+  - installing important packages, bundlers
+  - what is a parcel
+  - what are node modules
+  - dev-dependencies vs dependency
+  - package.JSON vs package-lock.JSON
+  - dist folder
+  - .parcel-cache folder
+  - .gitignore
+  - development phase vs production phase
+  - parcel advantages and its functions 
+
