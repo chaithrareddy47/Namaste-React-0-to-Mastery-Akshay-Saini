@@ -28,6 +28,15 @@
 
 ## Day - 03 Laying the foundation
 ## Day - 04 Let's Get Hooked
+### Topics Covered 
+    - React file and folder struvture
+    - 2 types of exports
+    - React hooks - useState()
+    - virtual Dom
+    - Reconciliation algorithm
+    - diff Algorithm
+    - React fiber
+    - React fiber architecture
 ## [React’s Virtual DOM](https://javascript.plainenglish.io/react-the-virtual-dom-comprehensive-guide-acd19c5e327a)
 
 
