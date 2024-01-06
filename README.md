@@ -1,4 +1,5 @@
-# React-Zero-To-Mastery By Akshay Saini
+# Namaste React  Course from Zero to Hero 🚀 by Akshay Saini Founder of NamasteDev. This repository for Assignments & Class Notes taken during class
+
 ## Day-01 Inception
 ### Topics Covered
  - Created a new git repo
