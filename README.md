@@ -26,4 +26,7 @@
   - parcel advantages and its functions
 
 ## Day - 03 Laying the foundation
+## Day - 04 Let's Get Hooked
+## [React’s Virtual DOM](https://javascript.plainenglish.io/react-the-virtual-dom-comprehensive-guide-acd19c5e327a)
+
 
