@@ -11,6 +11,7 @@
  - Needs of jsx
  - Library v/s Framework
  - Advantages of React
+## [Notes - Chapter-01](https://drive.google.com/file/d/1Pilz17_vJsfJOcq_mOp403ZAhi9rSts8/view)
 
 ## Day - 02  Igniting Our App
 ### Topics Covered
