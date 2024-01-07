@@ -11,7 +11,7 @@
  - Needs of jsx
  - Library v/s Framework
  - Advantages of React
-## [Notes - Chapter-01](https://drive.google.com/file/d/1Pilz17_vJsfJOcq_mOp403ZAhi9rSts8/view)
+## [Chapter-01 - Notes](https://drive.google.com/file/d/1Pilz17_vJsfJOcq_mOp403ZAhi9rSts8/view)
 
 ## Day - 02  Igniting Our App
 ### Topics Covered
@@ -26,6 +26,7 @@
   - .gitignore
   - development phase vs production phase
   - parcel advantages and its functions
+## [Chapter02 - Notes](https://drive.google.com/file/d/1iJ3IOkTpyDOqgDRsJM_EDLu78zURNw2I/view)
 
 ## Day - 03 Laying the foundation
 ## Day - 04 Let's Get Hooked
