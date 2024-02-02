@@ -135,107 +135,107 @@
 // export default Body;
 
 
-import { useEffect, useState } from 'react';
-import RestroCard from './RestroCard';
-import { SWIGGY_API_URL } from '../constants/constants';
-import ShimmerUi from './ShimmerUi';
+// import { useEffect, useState } from 'react';
+// import RestroCard from './RestroCard';
+// import { SWIGGY_API_URL } from '../constants/constants';
+// import ShimmerUi from './ShimmerUi';
 
-const Body = () => {
-	const [listOfRestro, setListOfRestro] = useState([]);
-	const [searchText, setSearchText] = useState('');
-	const [filterRestro, setFilterRestro] = useState([]);
+// const Body = () => {
+// 	const [listOfRestro, setListOfRestro] = useState([]);
+// 	const [searchText, setSearchText] = useState('');
+// 	const [filterRestro, setFilterRestro] = useState([]);
 
-	useEffect(() => {
-		fetchData();
-	}, []);
+// 	useEffect(() => {
+// 		fetchData();
+// 	}, []);
 
-	const fetchData = async () => {
-		const data = await fetch(SWIGGY_API_URL);
-		const json = await data.json();
+// 	const fetchData = async () => {
+// 		const data = await fetch(SWIGGY_API_URL);
+// 		const json = await data.json();
 
-		setListOfRestro(
-			json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-				?.restaurants,
-		);
-	};
+// 		setListOfRestro(
+// 			json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+// 				?.restaurants,
+// 		);
+// 	};
 
-	function handleBtnClick() {
-		const filterButton = listOfRestro.filter((filterData) => {
-			return filterData?.info?.avgRating > 4;
-		});
-		setListOfRestro(filterButton);
-	}
+// 	function handleBtnClick() {
+// 		const filterButton = listOfRestro.filter((filterData) => {
+// 			return filterData?.info?.avgRating > 4;
+// 		});
+// 		setListOfRestro(filterButton);
+// 	}
 
-	function filterData(searchText, restaurants) {
-		const resFilterData = restaurants.filter((restaurant) =>
-			restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase()),
-		);
-		return resFilterData;
-	}
+// 	function filterData(searchText, restaurants) {
+// 		const resFilterData = restaurants.filter((restaurant) =>
+// 			restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase()),
+// 		);
+// 		return resFilterData;
+// 	}
 
-	const searchData = (searchText, restaurants) => {
-		if (searchText !== '') {
-			const filteredData = filterData(searchText, restaurants);
-			setFilterRestro(filteredData);
-			if (filteredData.length === 0) {
-				console.log('Not Found');
-			}
-		} else {
-			setFilterRestro(restaurants);
-		}
-	};
+// 	const searchData = (searchText, restaurants) => {
+// 		if (searchText !== '') {
+// 			const filteredData = filterData(searchText, restaurants);
+// 			setFilterRestro(filteredData);
+// 			if (filteredData.length === 0) {
+// 				console.log('Not Found');
+// 			}
+// 		} else {
+// 			setFilterRestro(restaurants);
+// 		}
+// 	};
 
-	if (listOfRestro.length === 0) {
-		return <ShimmerUi />;
-	}
+// 	if (listOfRestro.length === 0) {
+// 		return <ShimmerUi />;
+// 	}
 
-	return (
-		<div className='body-container'>
-			<div className='search-container'>
-				<button
-					className='restro-btn'
-					onClick={handleBtnClick}>
-					Top rated Restro
-				</button>
-				<input
-					onChange={(e) => {
-						setSearchText(e.target.value);
-					}}
-					type='text'
-					placeholder='Search for Reastro'
-					value={searchText}
-				/>
-				<button
-					onClick={() => {
-						searchData(searchText, listOfRestro);
-					}}
-					className='search-btn'>
-					<i className='fa-solid fa-magnifying-glass'></i>
-				</button>
-				<button
-					className='restro-btn'
-					style={{ marginLeft: '10px' }}>
-					Clear Filter
-				</button>
-			</div>
+// 	return (
+// 		<div className='body-container'>
+// 			<div className='search-container'>
+// 				<button
+// 					className='restro-btn'
+// 					onClick={handleBtnClick}>
+// 					Top rated Restro
+// 				</button>
+// 				<input
+// 					onChange={(e) => {
+// 						setSearchText(e.target.value);
+// 					}}
+// 					type='text'
+// 					placeholder='Search for Reastro'
+// 					value={searchText}
+// 				/>
+// 				<button
+// 					onClick={() => {
+// 						searchData(searchText, listOfRestro);
+// 					}}
+// 					className='search-btn'>
+// 					<i className='fa-solid fa-magnifying-glass'></i>
+// 				</button>
+// 				<button
+// 					className='restro-btn'
+// 					style={{ marginLeft: '10px' }}>
+// 					Clear Filter
+// 				</button>
+// 			</div>
 
-			<div className='restro-container'>
-				{filterRestro.length > 0
-					? filterRestro.map((resList) => (
-							<RestroCard
-								key={resList.info.id}
-								resObj={resList}
-							/>
-					  ))
-					: listOfRestro.map((resList) => (
-							<RestroCard
-								key={resList.info.id}
-								resObj={resList}
-							/>
-					  ))}
-			</div>
-		</div>
-	);
-};
+// 			<div className='restro-container'>
+// 				{filterRestro.length > 0
+// 					? filterRestro.map((resList) => (
+// 							<RestroCard
+// 								key={resList.info.id}
+// 								resObj={resList}
+// 							/>
+// 					  ))
+// 					: listOfRestro.map((resList) => (
+// 							<RestroCard
+// 								key={resList.info.id}
+// 								resObj={resList}
+// 							/>
+// 					  ))}
+// 			</div>
+// 		</div>
+// 	);
+// };
 
-export default Body;
+// export default Body;
