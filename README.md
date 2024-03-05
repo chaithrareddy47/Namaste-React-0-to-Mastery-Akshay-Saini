@@ -14,6 +14,10 @@
 ## [Chapter-01 - Notes](https://drive.google.com/file/d/1Pilz17_vJsfJOcq_mOp403ZAhi9rSts8/view)
 
 
+## CHAPTER - 06 -FINDING THE PATH
+[foodapp](https://food-app-chapter-07.vercel.app/)
+
+
 
 
 
