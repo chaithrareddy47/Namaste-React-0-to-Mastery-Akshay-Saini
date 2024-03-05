@@ -15,7 +15,7 @@
 
 
 ## CHAPTER - 06 -FINDING THE PATH
-[foodapp](https://food-app-chapter-07.vercel.app/)
+   ### this is chapter 7 project [FoodApp](https://food-app-chapter-07.vercel.app/)
 
 
 
